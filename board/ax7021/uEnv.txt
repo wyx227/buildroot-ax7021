@@ -1,0 +1,2 @@
+bootargs=console=ttyPS0,115200 root=/dev/mmcblk0p2 rw rootwait
+uenvcmd=load mmc 0:1 0x2000000 zImage; load mmc 0:1 0x2A00000 system.dtb; bootz 0x2000000 - 0x2A00000
